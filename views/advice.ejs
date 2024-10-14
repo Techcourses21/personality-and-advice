@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Advice Generator</title>
+ <link rel="stylesheet" href="style.css">
+<!-- google link -->
+ <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+ <style>
+
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  background: #21342b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+
+}
+.advice-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#advice-quote {
+  font-size: 24px;
+  font-style: italic;
+  padding: 20px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+
+#user-name {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+ </style>
+
+</head>
+<body>
+ 
+   <!-- HTML -->
+<!-- HTML -->
+<div class="advice-card">
+    <p id="user-name">{{  <%= username  %> }}</p>
+    <blockquote id="advice-quote">{{ <%= advice %>}}</blockquote>
+  </div>
+</body>
+</html>
